@@ -102,11 +102,11 @@ nav ul li:last-child {
 }
 
 .fa-location-dot {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
     border-radius: 15px 0 0 15px;
     width: 4%;
+    padding-top: 10px;
+    text-align:center;
     font-size: 25px;
     color: var(--second-color);
     background-color: var(--main-bg-color);
