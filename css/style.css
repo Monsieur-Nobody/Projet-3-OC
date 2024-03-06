@@ -71,27 +71,24 @@ header {
 .logo img {
   padding-top: 30px;
   padding-bottom: 60px;
-  /* padding-left: ; */
   height: 19px;
   width: 61.09px;
 }
-
+ 
 nav ul {
   list-style-type: none;
   margin: 0;
-  padding: 30px 50px 0 0;
+  padding: 10px 15px 0 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  
 }
 
-nav ul li {
+nav ul li:first-child {
   margin-right: 69px;
 }
 
-nav ul li:last-child {
-  margin-right: 50px;
-}
 
 /****** Barre de recherche ***********/
 
@@ -499,6 +496,9 @@ footer {
     padding: 0;
     margin: 0;
     width: 100%;
+  }
+  nav ul li:first-child {
+    margin-right: 0;
   }
   nav ul li {
     gap: 0;
