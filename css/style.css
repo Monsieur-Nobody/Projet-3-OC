@@ -517,14 +517,36 @@ footer {
     flex-direction: column;
     align-items: center;
     padding-bottom: 10px;
-    border-bottom: 2px solid var(--main-bg-color);
+    
   }
-  header nav {
+  nav {
+    width: 100%;
     font-weight: bold;
-    padding-left: 60px;
+    /* padding-left: 60px; */
     font-size: 20px;
+    text-align: center;
   }
 
+ nav ul {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    /* border-bottom: 2px solid var(--main-bg-color); */
+ }
+ nav ul li{
+    gap: 0;
+    width: 100%;
+    border-bottom: 2px solid var(--main-bg-color);
+    flex-grow: 1;
+    margin: 0;
+ }
+ nav ul li:last-child {
+    margin-right: 0;
+  }
+ nav ul li:hover{
+    color: var(--main-color);
+    border-color: var(--main-color);
+ }
   .headline {
     display: flex;
     flex-direction: column;
