@@ -9,6 +9,7 @@
   --filter-bg-color: #deebff;
   --second-color: #000;
   --mobile-color: #ffff;
+  --mobile-color: #ffff;
 }
 
 .fa-solid {
@@ -50,6 +51,7 @@ a {
 
 .card-title {
   font-size: 14px;
+  font-size: 14px;
 }
 
 .euro {
@@ -66,6 +68,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: start;
+  align-items: start;
 }
 
 .logo img {
@@ -75,9 +78,18 @@ header {
   width: 61.09px;
 }
  
+ 
 nav ul {
   list-style-type: none;
   margin: 0;
+  padding: 10px 15px 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+
+nav ul li:first-child {
   padding: 10px 15px 0 0;
   display: flex;
   flex-direction: row;
@@ -106,6 +118,16 @@ nav ul li:first-child {
   background-color: var(--main-bg-color);
   padding-left: 5px;
   padding-right: 5px;
+.fa-location-dot {
+  border-radius: 15px 0 0 15px;
+  width: 4%;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 25px;
+  color: var(--second-color);
+  background-color: var(--main-bg-color);
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 input {
@@ -114,6 +136,7 @@ input {
   text-align: center;
   color: var(--main-color);
   border: 1px solid var(--main-bg-color);
+  color: var(--second-color);
   color: var(--second-color);
 }
 
@@ -126,6 +149,23 @@ input {
   border: 1px solid var(--Blue, #0065fc);
   background: var(--Blue, #0065fc);
   color: white;
+  cursor: pointer;
+}
+.searchbar button .fa-magnifying-glass {
+  display: none;
+}
+
+.searchbar .desktop {
+  font-weight: bold;
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
+}
+.searchbar ::placeholder {
+  font-weight: bold;
+  text-align: center;
+  color: #000;
+  font-size: 17px;
   cursor: pointer;
 }
 .searchbar button .fa-magnifying-glass {
@@ -158,6 +198,17 @@ input {
   display: flex;
   gap: 20px;
 }
+.filter {
+  display: flex;
+  align-items: baseline;
+  gap: 15px;
+  padding-top: 35px;
+}
+
+.section-filter {
+  display: flex;
+  gap: 20px;
+}
 .filter-button {
   display: inline-block;
   justify-content: space-between;
@@ -172,12 +223,26 @@ input {
   cursor: pointer;
   border-radius: 25px;
   border: 2.5px solid var(--Grey-Tint2, #d9d9d9);
+  border: 2.5px solid var(--Grey-Tint2, #d9d9d9);
   transition: background-color 0.3s ease;
+  font-weight: bold;
   font-weight: bold;
 }
 
 .filter-button:hover {
   background-color: var(--filter-bg-color);
+}
+
+.news {
+  margin-top: 20px;
+  margin-bottom: 35px;
+  font-weight: bold;
+}
+.news .fa-solid {
+  margin-right: 10px;
+  border: solid 2px var(--main-bg-color);
+  border-radius: 100%;
+  padding: 8px;
 }
 
 .news {
@@ -215,9 +280,14 @@ input {
   width: 30%;
   display: flex;
 }
+.hebergements-cards a {
+  width: 30%;
+  display: flex;
+}
 
 .hebergements .hebergements-cards {
   display: flex;
+  flex-direction: row;
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -234,8 +304,10 @@ input {
   margin-top: 20px;
   background-color: #ffff;
   padding: 5px 5px 15px 5px;
+  padding: 5px 5px 15px 5px;
   border-radius: 20px;
   height: 200px;
+  width: 100%;
   width: 100%;
   gap: 3px;
 }
@@ -244,10 +316,13 @@ input {
   border-radius: 20px 20px 0 0;
   width: 100%;
   height: 65%;
+  width: 100%;
+  height: 65%;
 }
 
 .hebergements-cards .card-content {
   width: 67%;
+  padding-left: 8px;
   padding-left: 8px;
   display: flex;
   flex-direction: column;
@@ -272,7 +347,10 @@ input {
 
 .hebergements .title-more {
   margin-bottom: -20px;
+.hebergements .title-more {
+  margin-bottom: -20px;
 }
+
 
 /****** Populaires ***********/
 .populaires {
@@ -327,9 +405,24 @@ input {
   max-width: 1440px;
   width: 100%;
   height: auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  width: 100%;
+  height: auto;
 }
 
 .activities .activities-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  width: 100%;
+}
+.activities-cards a {
+  display: flex;
+  width: 22%;
+  height: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -351,9 +444,20 @@ input {
   border-radius: 20px;
   padding: 0px;
   text-align: start;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: auto;
+  width: 100%;
+  border-radius: 20px;
+  padding: 0px;
+  text-align: start;
 }
 
 .activities-cards img {
+  height: 90%;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
   height: 90%;
   width: 100%;
   border-radius: 20px 20px 0 0;
@@ -361,11 +465,19 @@ input {
 
 .activities-cards .card .card-txt {
   padding-left: 16px;
+  padding-left: 16px;
 }
 
 /**Footer**/
 
 footer {
+  background-color: var(--main-bg-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 230px;
+  width: 100%;
+  margin-top: 45px;
   background-color: var(--main-bg-color);
   display: flex;
   flex-direction: row;
@@ -381,10 +493,23 @@ footer {
   margin-right: 20px;
 }
 
+.container {
+  width: 10%;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.container .container-title {
+  white-space: nowrap;
+}
 .container .container-title {
   white-space: nowrap;
 }
 .container ul {
+  list-style-type: none;
+  padding-left: 0px;
+  line-height: 30px;
+  white-space: nowrap;
   list-style-type: none;
   padding-left: 0px;
   line-height: 30px;
@@ -394,6 +519,37 @@ footer {
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
+
+/* large device hover effect */
+@media (min-width: 767.99px) {
+  nav ul li a {
+    text-decoration: none;
+    color: var(--second-color);
+    font-size: 16px;
+    position: relative;
+  }
+
+  nav ul li a::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--main-color);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+
+  nav ul li a:hover {
+    color: var(--main-color);
+  }
+
+  nav ul li a:hover::before {
+    transform: scaleX(1);
+  }
+}
 
 /* large device hover effect */
 @media (min-width: 767.99px) {
@@ -437,6 +593,13 @@ footer {
   .hebergements-cards a {
     width: 30%;
   }
+  .filter {
+    display: block;
+  }
+
+  .hebergements-cards a {
+    width: 30%;
+  }
 
   .hebergements {
     width: 100%;
@@ -463,6 +626,10 @@ footer {
 
   .populaires-cards .card-subtitle {
     font-size: 13px;
+  }
+
+  footer {
+    gap: 150px;
   }
 
   footer {
