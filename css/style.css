@@ -432,7 +432,6 @@ footer {
   flex-direction: row;
   justify-content: flex-start;
   gap: 230px;
-  width: 100%;
   margin-top: 45px;
 }
 
@@ -644,9 +643,11 @@ footer {
     flex-direction: column;
     justify-content: space-around;
   }
+
  .filter h2 {
  padding-left: 10px;
  }
+ 
   .section-filter {
     display: flex;
     flex-direction: row;
