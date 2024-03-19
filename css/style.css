@@ -429,7 +429,6 @@ input {
 footer {
   background-color: var(--main-bg-color);
   display: flex;
-  flex-direction: row;
   justify-content: flex-start;
   gap: 230px;
   margin-top: 45px;
